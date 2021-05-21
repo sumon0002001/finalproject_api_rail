@@ -1,22 +1,29 @@
 {
-  "name": "finalproject-api-rails",
-  "private": true,
-  "dependencies": {
-    "@babel/preset-react": "^7.13.13",
-    "@rails/actioncable": "^6.0.0",
-    "@rails/activestorage": "^6.0.0",
-    "@rails/ujs": "^6.0.0",
-    "@rails/webpacker": "5.3.0",
-    "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
-    "prop-types": "^15.7.2",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "turbolinks": "^5.2.0",
-    "webpack": "^4.46.0",
-    "webpack-cli": "^3.3.12"
+  "name": "tracking-app-api-with-rails",
+  "version": "1.0.0",
+  "description": "This api was built with Rails for my Tracking App as the final project at Microverse",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
   },
-  "version": "0.1.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yocosaka/Tracking-App-Api-with-Rails.git"
+  },
+  "author": "Yoko Saka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yocosaka/Tracking-App-Api-with-Rails/issues"
+  },
+  "homepage": "https://github.com/yocosaka/Tracking-App-Api-with-Rails#readme",
   "devDependencies": {
-    "webpack-dev-server": "^3.11.2"
+    "stylelint": "^13.3.3",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-csstree-validator": "^1.8.0",
+    "stylelint-scss": "^3.17.2"
   }
 }
