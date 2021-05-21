@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <h1 color= "rgb(243, 190, 44)" font-size= "40"> Health API </h1>
+  <h1 color= "rgb(243, 190, 44)" font-size= "40"> Tracking API </h1>
 </div>
 
 ## Table of Contents
