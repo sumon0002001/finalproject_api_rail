@@ -1,7 +1,5 @@
-# frozen_string_literal: true
-
 if Rails.env === 'production'
-  Rails.application.config.session_store :cookie_store, key: '_api_finalcapstone_session', domain: 'illnest-api.herokuapp.com'
+  Rails.application.config.session_store :cookie_store, key: '_my_tracking_app', domain: 'https://tracking-app-yoco.herokuapp.com'
 else
-  Rails.application.config.session_store :cookie_store, key: '_api_finalcapstone_session'
+  Rails.application.config.session_store :cookie_store, key: '_my_tracking_app'
 end

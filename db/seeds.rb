@@ -1,9 +1,17 @@
+User.create([{
+              username: 'admin', password: 'admin', admin: true
+            }])
 
-user1 = User.create(username: 'sumon', password:'123456')
-user2 = User.create(username: 'sumon', password: '123456')
-
-illness1 = Illness.create(user_id: 1, name: 'Colitis', description: 'Stomache')
-illness2 = Illness.create(user_id: 1, name: 'Headache')
-
-tracking1 = Tracking.create(illness_id:1 ,date: "2020-05-11" , mood:'🙂', temperature: 36.5, medicines:["Omeprazol", "Peptobismol"], symptons:["Weakness", "Stomache"])
-tracking2 = Tracking.create(illness_id: 1, date: "2020-05-10" , mood:'🙁', temperature: 36.7)
+Item.create([{
+              title: 'Idioms', unit: 'idiom', icon: 'typcn:sort-alphabetically', target: 30
+            }, {
+              title: 'Grammer', unit: 'min', icon: 'bx:bxs-book', target: 30
+            }, {
+              title: 'Pronunciation', unit: 'min', icon: 'carbon:chat-bot', target: 15
+            }, {
+              title: 'Reading', unit: 'page', icon: 'akar-icons:book', target: 10
+            }, {
+              title: 'Speaking', unit: 'min', icon: 'cil:chat-bubble', target: 30
+            }, {
+              title: 'Writing', unit: 'word', icon: 'bx:bxs-pen', target: 200
+            }])

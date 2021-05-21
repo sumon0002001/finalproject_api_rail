@@ -1,18 +1,29 @@
 {
-  "name": "api_finalcapstone",
-  "private": true,
-  "dependencies": {
-    "@rails/actioncable": "^6.0.0",
-    "@rails/activestorage": "^6.0.0",
-    "@rails/ujs": "^6.0.0",
-    "@rails/webpacker": "4.2.2",
-    "turbolinks": "^5.2.0"
+  "name": "tracking-app-api-with-rails",
+  "version": "1.0.0",
+  "description": "This api was built with Rails for my Tracking App as the final project at Microverse",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
   },
-  "version": "0.1.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yocosaka/Tracking-App-Api-with-Rails.git"
+  },
+  "author": "Yoko Saka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yocosaka/Tracking-App-Api-with-Rails/issues"
+  },
+  "homepage": "https://github.com/yocosaka/Tracking-App-Api-with-Rails#readme",
   "devDependencies": {
     "stylelint": "^13.3.3",
     "stylelint-config-standard": "^20.0.0",
-    "stylelint-scss": "^3.17.2",
-    "webpack-dev-server": "^3.11.0"
+    "stylelint-csstree-validator": "^1.8.0",
+    "stylelint-scss": "^3.17.2"
   }
 }

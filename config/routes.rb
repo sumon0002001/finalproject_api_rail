@@ -1,13 +1,11 @@
-# frozen_string_literal: true
-
 Rails.application.routes.draw do
-  root 'static_page#home'
-  post '/login', to: 'sessions#create'
-  delete '/logout', to: 'sessions#destroy'
-  get '/logged_in', to: 'sessions#method_logged_in?'
-  resources :users,  only: %i[create show index] do
-    resources :illnesses do
-      resources :trackings
+  namespace 'api' do
+    namespace 'v1' do
+      resources :items, except: %i[new]
+      resources :users, only: %i[show create]
+      resources :login, only: %i[create]
+      resources :auto_login, only: %i[create]
+      resources :records, except: %i[new]
     end
   end
 end

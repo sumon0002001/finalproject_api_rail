@@ -1,9 +1,13 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
-  it { should have_many(:illnesses).dependent(:destroy) }
-  it { should validate_presence_of(:username) }
-  it { should validate_presence_of(:password) }
-  it { should validate_length_of(:username).is_at_least(4) }
-  it { should validate_length_of(:password).is_at_least(6) }
+  describe 'Testing validations' do
+    it { should have_secure_password }
+    it { should validate_presence_of(:username) }
+  end
+
+  describe 'Testing associations' do
+    it { should have_many(:records).dependent(:destroy) }
+    it { should have_many(:items).through(:records) }
+  end
 end
