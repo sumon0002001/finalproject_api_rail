@@ -1,13 +1,27 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
-  describe 'Testing validations' do
-    it { should have_secure_password }
-    it { should validate_presence_of(:username) }
+  context 'Validates Username' do
+    it 'Should be valid' do
+      user = User.new(username: 'rayhan', password: '1234')
+      expect(user.save).to be true
+    end
+
+    it 'should not be valid' do
+      user = User.new(username: '', password: '1234')
+      expect(user.save).not_to be true
+    end
   end
 
-  describe 'Testing associations' do
-    it { should have_many(:records).dependent(:destroy) }
-    it { should have_many(:items).through(:records) }
+  context 'Validates Password' do
+    it 'Should be valid' do
+      user = User.new(username: 'rayhan', password: '1234')
+      expect(user.save).to be true
+    end
+
+    it 'should not be valid' do
+      user = User.new(username: 'rayhan', password: '')
+      expect(user.save).not_to be true
+    end
   end
 end

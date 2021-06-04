@@ -1,98 +1,78 @@
-# Final Capstone Project Project API : Tracking app
+# bug-tracker-REST-API
 
-<div align="center">
+## Project Description
 
-  <h1 color= "rgb(243, 190, 44)" font-size= "40"> Tracking API </h1>
-</div>
-
-## Table of Contents
-
-* [About the Project](#about-the-project)
-* [The Back-End API](#the-back-end-api)
-  * [How To Use it](#how-to-use-it)
-* [Tecnologies used](#tecnologies-used)
-* [Author](#author)
-* [Show your Support](#show-your-support)
-* [Acknowledgements](#acknowledgements)
-
-<!-- ABOUT THE PROJECT -->
-## About The Project
-
-The objective of this project was to create a tracking App in which a user is presented with a list of things to be measured. For the Front End, I used React and Ruby on Rails for the Back-End API.
-
-Live version of the project: [Live version]()
-
-Project Link: [Final-capstone API](https://github.com/sumon0002001/finalproject_api_rail)
+This project is the backend part of the Bug Tracker App. It is a REST API built using ROR.
+The frontend part will be found here - [bug-tracker](https://github.com/ershadul1/bug-tracker).
 
 
-<!-- THE BACKEND API -->
-## The Back End API
+## Built With
 
-The back-end for this project consists of a REST API that manages the health database. This database is integrated by the next tables:
+- Ruby 2.7.1
+- Ruby on Rails 6.0.3.5
 
-1. User Table: For storing username, and encrypted password and password confirmation
+## Tested with
+- Rspec
 
-2. Health Table: For storing the name of the illness, and its description. It is depended on the user.
+## How to run this project on your local machine
 
-3. Tracking Table:  Include the daily information of the illness. This information includes:
-* Temperature
-* Mood
-* Date
-* Medicines
-* Symptoms
+### Prerequisites
+1. You should have ruby installed.(This project was tested on version `2.7.1`)
+1. You should have rails installed.(This project was tested on version `Rails 6.0.3.5`)
+1. You should have bundler installed.(This project was tested with Bundler version `2.1.4`)
 
-
-<!-- HOW TO USE IT -->
-### How to use it
-
-You can always use the [live version]() or install it locally using these steps:
-
-
-#### Clone my repository
-
-`$ git clone https://github.com/sumon0002001/finalproject_api_rail`
-
-#### Go to my project's folder
-
-`$ cd finalproject_api_rail`
-
-#### Get the dependencies needed
-
-`$ Bundle install`
-
-#### Create and migrate the tables
-`$ rails db:create`
-`$ rails db:migrate`
-`$ rails db:seed`
-
-#### Start the server
-`$ rails server`
-
-<!-- TECNOLOGIES USED -->
-## Tecnologies used
-
-* Ruby on Rails
-* Heroku
-* Postgresql
-* Rspec
-* bcrypt
-
-<!--AUTHOR -->
-## Author
-
-👤  **Mir Rawshan Ali**
-
-- GitHub: [@sumon0002009](https://github.com/sumon0002001)
-- Twitter: [@sumon0002009](https://twitter.com/Sumon0002009)
-- LinkedIn: [Mir Rawshan Ali](https://www.linkedin.com/in/mir-rawshan-ali/)
+   
+### Steps to follow
+1. Clone the repository to your local machine using `git clone https://github.com/ershadul1/bug-tracker-REST-API.git`
+1. On your local machine, navigate to the finance-tracker folder using `cd bug-tracker-REST-API` in your terminal
+1. Install all the gems for the project by running `bundle install` in your terminal
+1. Create the database using this command
+`bin/rake db:create`
+1. Migrate the database using this command
+`bin/rake db:migrate`
+1. Start the server by using this command.
+`bin/rails server`
+1. Now you can interact with the API in the following URL `http://localhost:3000/api/v1`
 
 
-<!-- SHOW YOUR SUPPORT --> 
-## Show your Support
 
-Give a star if you like this project!
+## Contributions
 
-<!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
+  There are two ways of contributing to this project:
 
-* [Microverse](https://www.microverse.org/)
+1.  If you see something wrong or not working, please check [the issue tracker section](https://github.com/ershadul1/bug-tracker-REST-API/issues), if that problem you met is not in already opened issues then open the issue by clicking on `new issue` button.
+
+2.  If you have a solution to that, and you are willing to work on it, follow the below steps to contribute:
+    1.  Fork this repository
+    1.  Clone it on your local computer by running `git clone https://github.com/ershadul1/bug-tracker-REST-API.git` __Replace *ershadul1* with the username you use on github__
+    1.  Open the cloned repository which appears as a folder on your local computer with your favorite code editor
+    1.  Create a separate branch off the *master branch*,
+    1.  Write your codes which fix the issue you found
+    1.  Commit and push the branch you created
+    1.  Raise a pull request, comparing your new created branch with our original master branch [here](https://github.com/ershadul1/bug-tracker-REST-API)
+
+
+## Instructions to Test the Project
+
+* Clone the repository using `git clone https://github.com/ershadul1/bug-tracker-REST-API.git`
+* cd in to the cloned directory `cd bug-tracker-REST-API`
+* Switch to testing branch by `git checkout REST-API`
+* Run `bundle install`
+* Run `rspec`
+
+## Authors
+
+👤 **Ershadul Rayhan**
+
+- Github: [@ershadul1](https://github.com/ershadul1)
+- Twitter: [@ErshadulRayhan](https://twitter.com/ErshadulRayhan)
+- Linkedin: [ErshadulRayhan](https://www.linkedin.com/in/ershadulrayhan/)
+- Email:  ershadul.rayhan@gmail.com
+
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+- This project was inspired by the [Microverse](https:www.microverse.org) program
