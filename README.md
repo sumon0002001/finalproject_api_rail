@@ -62,13 +62,6 @@ The frontend part will be found here - [bug-tracker](https://github.com/ershadul
 
 ## Authors
 
-👤 **Ershadul Rayhan**
-
-- Github: [@ershadul1](https://github.com/ershadul1)
-- Twitter: [@ErshadulRayhan](https://twitter.com/ErshadulRayhan)
-- Linkedin: [ErshadulRayhan](https://www.linkedin.com/in/ershadulrayhan/)
-- Email:  ershadul.rayhan@gmail.com
-
 
 ## Show your support
 
